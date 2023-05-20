@@ -1,0 +1,93 @@
+body {
+  width: 1400px;
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.status-positive {
+  color: green;
+}
+
+.status-negative {
+  color: red;
+}
+
+.title {
+  margin-bottom: 41px;
+  line-height: 39px;
+  text-align: center;
+  font-weight: 700;
+}
+.expenses {
+  width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 51px;
+}
+
+.expensesInput {
+  width: 500px;
+}
+.moneyInput {
+  border: 1px solid black;
+  height: 58px;
+  padding: 10px 0 9px 22px;
+}
+
+.moneyInput__input {
+  width: 100%;
+  line-height: 38px;
+  outline: none;
+}
+
+.spending-category {
+  margin-top: 20px;
+  padding-left: 15px;
+  width: 500px;
+  height: 58px;
+  line-height: 38px;
+  font-size: 30px;
+}
+
+.expenses-button {
+  display: block;
+  width: 370px;
+  height: 60px;
+  line-height: 58px;
+  background-color: #0094ff;
+  color: white;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.limit {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.decoratin-text {
+  font-weight: 700;
+}
+
+.history-title {
+  margin-bottom: 21px;
+}
+
+.rub::after {
+  content: " руб.";
+}
+
+.expenses-button-reset {
+  display: block;
+  width: 500px;
+  line-height: 58px;
+  background-color: #ff0000;
+  color: white;
+  font-size: inherit;
+  font-family: inherit;
+}

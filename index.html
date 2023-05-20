@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ExpensesApp</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h2 class="title">Учет расходов</h2>
+    <div class="expenses">
+      <div class="expensesInput">
+        <div class="moneyInput">
+          <input class="js-expenses-input moneyInput__input" type="number" />
+        </div>
+        <div>
+          <select class="spending-category">
+            <option>Иное</option>
+            <option>Транспорт</option>
+            <option>Кафе и рестораны</option>
+            <option>Аптека</option>
+            <option>Развлечения</option>
+          </select>
+        </div>
+      </div>
+      <button class="js-expenses-button expenses-button">Добавить</button>
+
+      <div class="limit">
+        <p>
+          <span class="decoratin-text">Лимит:</span>
+          <span class="js-limit rub">10000</span>
+          <img
+            class="js-change-limit"
+            src="limit-img.png"
+            alt="иконка для изменения лимита"
+          />
+        </p>
+        <p>
+          <span class="decoratin-text">Сумма:</span>
+          <span class="js-sum rub">0</span>
+        </p>
+        <p>
+          <span class="decoratin-text">Статус:</span>
+          <span class="js-status"></span>
+        </p>
+      </div>
+      <div class="history">
+        <h2 class="history-title decoratin-text">История:</h2>
+        <div class="js-expenses-history"></div>
+      </div>
+      <button class="js-expenses-button-reset expenses-button-reset">
+        Сбросить расходы
+      </button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
